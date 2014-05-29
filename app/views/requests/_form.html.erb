@@ -1,5 +1,9 @@
-<%= form_for @request, :html => { :class => 'form-horizontal' } do |f| %>
-  <div class="control-group">
+<%= form_for @request, :html => { :multipart => true } do |f| %>
+
+    <%= f.file_field :photo %>
+
+
+    <div class="control-group">
     <%= f.label :title, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :title, :class => 'text_field' %>

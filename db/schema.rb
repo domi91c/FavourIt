@@ -11,11 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140527214004) do
+ActiveRecord::Schema.define(version: 20140529045330) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-  enable_extension "adminpack"
 
   create_table "locations", force: true do |t|
     t.string   "name"
@@ -25,8 +24,6 @@ ActiveRecord::Schema.define(version: 20140527214004) do
     t.boolean  "gmaps"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "profile_id"
-    t.integer  "offer_id"
   end
 
   create_table "offers", force: true do |t|
@@ -41,6 +38,18 @@ ActiveRecord::Schema.define(version: 20140527214004) do
     t.string   "address"
     t.boolean  "gmap"
   end
+
+  add_index "offers", ["user_id"], name: "index_offers_on_user_id", using: :btree
+
+  create_table "post_attachments", force: true do |t|
+    t.string   "avatar"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "request_id"
+    t.integer  "post_id"
+  end
+
+  add_index "post_attachments", ["request_id"], name: "index_post_attachments_on_request_id", using: :btree
 
   create_table "posts", force: true do |t|
     t.string   "title"
@@ -59,6 +68,10 @@ ActiveRecord::Schema.define(version: 20140527214004) do
     t.datetime "updated_at"
     t.integer  "user_id"
     t.string   "image_url"
+    t.boolean  "gmaps"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "address"
   end
 
   create_table "requests", force: true do |t|
@@ -67,7 +80,13 @@ ActiveRecord::Schema.define(version: 20140527214004) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
+
+  add_index "requests", ["user_id"], name: "index_requests_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -89,5 +108,6 @@ ActiveRecord::Schema.define(version: 20140527214004) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["username"], name: "index_users_on_username", using: :btree
 
 end

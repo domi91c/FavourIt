@@ -8,7 +8,7 @@ gem 'therubyracer'
 gem 'jazz_hands'
 gem 'gmaps4rails'
 gem 'geocoder'
-gem 'carrierwave'
+gem 'paperclip', github: 'thoughtbot/paperclip'# Use jquery as the JavaScript library
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
