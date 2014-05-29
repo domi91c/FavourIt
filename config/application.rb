@@ -25,5 +25,13 @@ module FavourIt
 
 	  config.assets.initialize_on_precompile = false
 
+    config.to_prepare do
+	    Devise::SessionsController.layout "application.html.erb"
+	    Devise::RegistrationsController.layout "application.html.erb"
+	    Devise::ConfirmationsController.layout "application.html.erb"
+	    Devise::UnlocksController.layout "application.html.erb"
+	    Devise::PasswordsController.layout "application.html.erb"
+    end
+
   end
 end
