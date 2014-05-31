@@ -255,8 +255,9 @@
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, ruby-2.1.1-p76) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.6.2, ruby-2.1.1-p76) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v2.2.1, ruby-2.1.1-p76) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="carrierwave (v0.10.0, ruby-2.1.1-p76) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.5.3, ruby-2.1.1-p76) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="climate_control (v0.0.3, ruby-2.1.1-p76) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cocaine (v0.5.4, ruby-2.1.1-p76) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coderay (v1.1.0, ruby-2.1.1-p76) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.0.1, ruby-2.1.1-p76) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.2.0, ruby-2.1.1-p76) [gem]" level="application" />
@@ -303,6 +304,7 @@
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.10.1, ruby-2.1.1-p76) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.2.1, ruby-2.1.1-p76) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, ruby-2.1.1-p76) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="paperclip (v4.1.1@b2d9a1, ruby-2.1.1-p76) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.17.1, ruby-2.1.1-p76) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.4, ruby-2.1.1-p76) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="posix-spawn (v0.3.8, ruby-2.1.1-p76) [gem]" level="application" />
