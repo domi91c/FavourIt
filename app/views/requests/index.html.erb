@@ -6,22 +6,22 @@
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
   <%= form_tag requests_path, :method => "get" do %>
       <%= text_field_tag :search, params[:search], placeholder: "Search Requests" %>
-      <%= submit_tag "Search", :class => "button" , :name => nil %>
+      <%= submit_tag "Search", :class => "btn" , :name => nil %>
   <% end %>
-</div></div>
+</div>
 
 
 <table class="table table-striped">
   <thead>
-    <tr>
-      <th><%= User %></th>
-      <th><%= model_class.human_attribute_name(:title) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
-    </tr>
+  <tr>
+    <th><%= User %></th>
+    <th><%= model_class.human_attribute_name(:title) %></th>
+    <th><%= model_class.human_attribute_name(:created_at) %></th>
+    <th><%=t '.actions', :default => t("helpers.actions") %></th>
+  </tr>
   </thead>
   <tbody>
-    <% @requests.each do |request| %>
+  <% @requests.each do |request| %>
       <tr>
 
         <td><%= link_to request.user.username, request_path(request) %></td>
@@ -39,7 +39,7 @@
                       :class => 'button button-mini button-danger' %>
         </td>
       </tr>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
 

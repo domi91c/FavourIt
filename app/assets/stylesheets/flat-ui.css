@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Osaka';
+  font-family: 'Lato';
   src: url('../fonts/lato/lato-black.eot');
   src: url('../fonts/lato/lato-black.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-black.woff') format('woff'), url('../fonts/lato/lato-black.ttf') format('truetype'), url('../fonts/lato/lato-black.svg#latoblack') format('svg');
   font-weight: 900;
@@ -199,7 +199,8 @@ you can use the generic selector below, but it's slower:
   border-top-color: #34495e !important;
 }
 body {
-  font-family: acme, sans-serif;  font-size: 18px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 18px;
   line-height: 1.72222;
   color: #34495e;
   background-color: #ffffff;
@@ -4445,10 +4446,10 @@ body.vjs-full-window {
   }
 }
 footer {
-  background-color: #4D77A2;
+  background-color: #edeff1;
   color: #bac1c8;
   font-size: 15px;
-  margin-top: 30px
+  padding: 0;
 }
 footer a {
   color: #9aa4af;
