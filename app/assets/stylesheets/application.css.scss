@@ -15,22 +15,17 @@
  */
 
 
-body{
-  background-color: green;
 
-  background: url("");
-  background-repeat: true;
-}
 .logo {
 
   content:url(favourtree-Recovered6.png);
-  height: 180px;
+  height: 300px;
 }
 
 
 .navlogo {
 
-  content:url(favourtree-Recovered6.png);
+  content:url(favourtree-Recovered2.png);
   height: 39px;
 
 
@@ -97,4 +92,25 @@ body{
   background: #f5f5f5;
 
 
+}
+
+
+body{
+  background-color: green;
+
+  background: url("paperbg.jpg");
+  background-repeat: inherit;
+}
+
+
+
+
+.navbar-inverse {
+  background-color: #0075a7;
+}
+
+.contain-fill {
+
+  width: 100%;
+  position: absolute;
 }
