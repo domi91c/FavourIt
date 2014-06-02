@@ -14,11 +14,27 @@
  *= require_self
  */
 
+.navbar-form {
+  width: 300px;
+}
 
+.profilename {
+  display:inline-block;
+  margin-right:10px;
+  width:200px;
+  font-size: 20;
+  color: white;
+}
+
+.profilepic {
+  display:inline-block;
+  width:100px;
+  content:url(profilepic.png);
+
+}
 
 .logo {
 
-  margin-right: 40px;
   content:url(gofavorit_logo_crpd.png);
   height: 120px;
 }
@@ -26,11 +42,12 @@
 
 .navlogo {
 
-  content:url(gofavorit_logo_crpd.png);
-  height: 39px;
-
+  content:url(profilepic.png);
+  height: 53px;
+  display:inline;
 
 }
+
 
 #navbar {
   background-color: #000;
@@ -45,15 +62,17 @@
 }
 
 #headerbar {
+
   background-color: #4D77A2;
   color: #bac1c8;
   padding: 10px;
+  padding-top: 30px;
 }
 
 #headerbar2 {
   background-color: #d0e3c6;
   color: #bac1c8;
-  padding: 10px;
+  padding: 6px;
 
 }
 
@@ -97,9 +116,7 @@
 
 
 body{
-  background-color: green;
 
-  background: url("paperbg.jpg");
   background-repeat: inherit;
 }
 
