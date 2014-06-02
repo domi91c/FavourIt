@@ -1,11 +1,11 @@
 
 <%- model_class = Profile -%>
 <div class="page-header">
+  <div id="">
+    <img src="http://cs-production.s3.amazonaws.com/challenges/1368/rtaImage.jpeg" alt="Smiley face" height="150" width="150">
+  </div>
+<h1>Dominic Nunes</h1>
 
-
-<div id="">
-  <img src="http://cs-production.s3.amazonaws.com/challenges/1368/rtaImage.jpeg" alt="Smiley face" height="150" width="150">
-</div>
 
   <div id="worked">
 
@@ -27,6 +27,7 @@
   <tbody>
   <% @offers.each do |post| %>
       <tr>
+
 
         <td><%= link_to post.title, post_path(post) %></td>
         <td><%= post.user.first_name %></td>

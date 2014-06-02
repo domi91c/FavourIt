@@ -10,9 +10,9 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="pull-left ">
-    <div class="navlogo">
+      <div class="navlogo">
 
-    </div>
+      </div>
 
       <% if user_signed_in? %>
           <div class="profilename"><strong><%= current_user.username %></strong></div>
@@ -58,34 +58,34 @@
   </div>
 </nav>
 
-<div id="headerbar">
-</div>
+
 
 <div class="logo page-header"></div>
 
-    <div class="col-sm-3 col-md-2 sidebar-offcanvas well" id="sidebar" role="navigation">
-      <ul class="nav nav-list">
-        <li class="nav-header">Sidebar</li>
-        <li><%= link_to "Profile", profiles_path  %></li>
-        <li><%= link_to "Offers", offers_path  %></li>
-        <li><%= link_to "Requests", requests_path  %></li>
-        <li><%= link_to "Post Ad", new_post_path  %></li>
-        <li><%= link_to "Free Stuff", "/path3"  %></li>
+<div class="col-sm-3 col-md-2 sidebar-offcanvas well" id="sidebar" role="navigation">
+  <ul class="nav nav-list">
+    <li class="nav-header">Sidebar</li>
+    <li><%= link_to "Profile", profiles_path  %></li>
+    <li><%= link_to "Offers", offers_path  %></li>
+    <li><%= link_to "Requests", requests_path  %></li>
+    <li><%= link_to "Post Ad", new_post_path  %></li>
+    <li><%= link_to "Free Stuff", "/path3"  %></li>
 
-      </ul>
+  </ul>
 
-    </div>
+</div>
 
-      <div class="col-sm-9 col-md-10 main">
 
-          <%= bootstrap_flash %>
-          <%= yield %>
-          <%= yield :scripts %>
-        </div>
+<div class="col-sm-9 col-md-10 main">
+  <%= yield :scripts %>
+  <%= yield %>
+  <%= bootstrap_flash %>
+
+</div>
 
 
 <footer>
-  <p class="pull-right">©2014 lunar fx</p>
+  <p class="pull-right">©2014 Lunar FX</p>
 </footer>
 
 </body>

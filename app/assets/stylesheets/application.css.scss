@@ -27,6 +27,7 @@
 }
 
 .profilepic {
+  margin-top: 5px ;
   display:inline-block;
   width:100px;
   content:url(profilepic.png);
@@ -35,6 +36,7 @@
 
 .logo {
 
+  margin-top: 70px;
   content:url(gofavorit_logo_crpd.png);
   height: 120px;
 }
@@ -90,7 +92,7 @@
   font: 400 16px/120% "proxima-nova", sans-serif;
   border: none;
 
-  background: #7F8C8D;
+  background: #3498DB;
   text-align: center;
   min-width: 3.8em;
   letter-spacing: 0;

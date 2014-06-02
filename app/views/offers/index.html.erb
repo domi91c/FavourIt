@@ -18,20 +18,20 @@
 
 <table class="table table-striped">
   <thead>
-    <tr>
-      <th><%= User %></th>
-      <th><%= model_class.human_attribute_name(:title) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
-    </tr>
+
   </thead>
   <tbody>
 
 
   <% @offers.each do |offer| %>
       <tr>
-        <td><%= link_to offer.user.username, offer_path(offer) %></td>
-        <td><%= offer.title %></td>
+
+        <td>
+          <div class="navlogo">
+
+          </div>
+          <%= link_to offer.user.username %></td>
+        <td><%= link_to offer.title, offer_path(offer) %></td>
         <td><%= offer.created_at.strftime("%H:%M %b %d") %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
